@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PianoController">
+   <children>
+      <Rectangle fx:id="Clow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="60.0" layoutY="83.0" onKeyPressed="#clowPress" onKeyReleased="#clowRelease" onMousePressed="#clowMPress" onMouseReleased="#clowMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="Dlow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="92.0" layoutY="83.0" onKeyPressed="#dlowPress" onKeyReleased="#dlowRelease" onMousePressed="#dlowMPress" onMouseReleased="#dlowMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="Elow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="124.0" layoutY="83.0" onKeyPressed="#elowPress" onKeyReleased="#elowRelease" onMousePressed="#elowMPress" onMouseReleased="#elowMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="Flow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="156.0" layoutY="83.0" onKeyPressed="#flowPress" onKeyReleased="#flowRelease" onMousePressed="#flowMPress" onMouseReleased="#flowMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="Glow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="188.0" layoutY="83.0" onKeyPressed="#glowPress" onKeyReleased="#glowRelease" onMousePressed="#glowMPress" onMouseReleased="#glowMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="Alow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="220.0" layoutY="83.0" onKeyPressed="#alowPress" onKeyReleased="#alowRelease" onMousePressed="#alowMPress" onMouseReleased="#alowMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="Blow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="252.0" layoutY="83.0" onKeyPressed="#blowPress" onKeyReleased="#blowRelease" onMousePressed="#blowMPress" onMouseReleased="#blowMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="C" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="284.0" layoutY="83.0" onKeyPressed="#cPress" onKeyReleased="#cRelease" onMouseClicked="#cClick" onMousePressed="#cMPress" onMouseReleased="#cMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="D" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="316.0" layoutY="83.0" onKeyPressed="#dPress" onKeyReleased="#dRelease" onMouseClicked="#dClick" onMousePressed="#dMPress" onMouseReleased="#dMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="E" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="348.0" layoutY="83.0" onKeyPressed="#ePress" onKeyReleased="#eRelease" onMouseClicked="#eClick" onMousePressed="#eMPress" onMouseReleased="#eMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="F" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="380.0" layoutY="83.0" onKeyPressed="#fPress" onKeyReleased="#fRelease" onMouseClicked="#fClick" onMousePressed="#fMPress" onMouseReleased="#fMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="G" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="412.0" layoutY="83.0" onKeyPressed="#gPress" onKeyReleased="#gRelease" onMouseClicked="#gClick" onMousePressed="#gMPress" onMouseReleased="#gMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="Ctall" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="508.0" layoutY="83.0" onKeyPressed="#ctallPress" onKeyReleased="#ctallRelease" onMouseClicked="#ctallClick" onMousePressed="#ctallMPress" onMouseReleased="#ctallMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="B" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="476.0" layoutY="83.0" onKeyPressed="#bPress" onKeyReleased="#bRelease" onMousePressed="#bMPress" onMouseReleased="#bMRealease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="A" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="444.0" layoutY="83.0" onKeyPressed="#aPress" onKeyReleased="#aRelease" onMouseClicked="#aClick" onMousePressed="#aMPress" onMouseReleased="#aMRelease" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="DbLeft" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="82.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="EbLeft" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="114.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="GbLeft" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="178.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="AbLeft" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="210.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="BbLeft" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="242.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="DbRight" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="306.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="EbRight" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="338.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="GbRight" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="402.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="AbRight" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="434.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="BbRight" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="466.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <TextField disable="true" floatText="1" layoutX="66.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="q" layoutX="290.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="=" layoutX="258.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="0" layoutX="226.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="8" layoutX="194.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="6" layoutX="162.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="5" layoutX="130.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="3" layoutX="98.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="y" layoutX="386.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="t" layoutX="354.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="e" layoutX="322.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="a" layoutX="514.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="]" layoutX="482.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="p" layoutX="450.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="i" layoutX="418.0" layoutY="276.0" prefHeight="35.0" prefWidth="20.0" />
+      <TextField disable="true" floatText="2" layoutX="85.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="[" layoutX="469.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="o" layoutX="437.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="u" layoutX="405.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="r" layoutX="341.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="w" layoutX="309.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="-" layoutX="245.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="9" layoutX="213.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="7" layoutX="181.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+      <TextField disable="true" floatText="4" layoutX="117.0" layoutY="189.0" prefHeight="35.0" prefWidth="8.0" />
+   </children>
+</AnchorPane>
