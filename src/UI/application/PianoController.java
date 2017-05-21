@@ -1,90 +1,213 @@
 package UI.application;
 
+import java.awt.event.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import javax.swing.JFrame;
-
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
 import javafx.scene.shape.Rectangle;
 
-public class PianoController extends JFrame {
+public class PianoController {
 
-	@FXML
-	private Rectangle Clow;
+    @FXML
+    private Rectangle Clow;
 
-	@FXML
-	private Rectangle Dlow;
+    @FXML
+    private Rectangle Dlow;
 
-	@FXML
-	private Rectangle Elow;
+    @FXML
+    private Rectangle Elow;
 
-	@FXML
-	private Rectangle Flow;
+    @FXML
+    private Rectangle Flow;
 
-	@FXML
-	private Rectangle Glow;
+    @FXML
+    private Rectangle Glow;
 
-	@FXML
-	private Rectangle Alow;
+    @FXML
+    private Rectangle Alow;
 
-	@FXML
-	private Rectangle Blow;
+    @FXML
+    private Rectangle Blow;
 
-	@FXML
-	private Rectangle C;
+    @FXML
+    private Rectangle C;
 
-	@FXML
-	private Rectangle D;
+    @FXML
+    private Rectangle D;
 
-	@FXML
-	private Rectangle E;
+    @FXML
+    private Rectangle E;
 
-	@FXML
-	private Rectangle F;
+    @FXML
+    private Rectangle F;
 
-	@FXML
-	private Rectangle G;
+    @FXML
+    private Rectangle G;
 
-	@FXML
-	private Rectangle Ctall;
+    @FXML
+    private Rectangle Chigh;
 
-	@FXML
-	private Rectangle B;
+    @FXML
+    private Rectangle B;
 
-	@FXML
-	private Rectangle A;
+    @FXML
+    private Rectangle A;
 
-	@FXML
-	private Rectangle DbLeft;
+    @FXML
+    private Rectangle DbLow;
 
-	@FXML
-	private Rectangle EbLeft;
+    @FXML
+    private Rectangle EbLow;
 
-	@FXML
-	private Rectangle GbLeft;
+    @FXML
+    private Rectangle GbLow;
 
-	@FXML
-	private Rectangle AbLeft;
+    @FXML
+    private Rectangle AbLow;
 
-	@FXML
-	private Rectangle BbLeft;
+    @FXML
+    private Rectangle BbLow;
 
-	@FXML
-	private Rectangle DbRight;
+    @FXML
+    private Rectangle DbMedium;
 
-	@FXML
-	private Rectangle EbRight;
+    @FXML
+    private Rectangle EbMedium;
 
-	@FXML
-	private Rectangle GbRight;
+    @FXML
+    private Rectangle GbMedium;
 
-	@FXML
-	private Rectangle AbRight;
+    @FXML
+    private Rectangle AbMedium;
 
-	@FXML
-	private Rectangle BbRight;	
-	JFrame Frame = new JFrame();
+    @FXML
+    private Rectangle BbMedium;
+
+    @FXML
+    void AbLowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void AbMediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void AlowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void AmediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void BbLowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void BbMediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void BlowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void BmediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void ChighPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void ClowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void CmediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void DbLowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void DbMediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void DlowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void DmediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void EbLowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void EbMediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void ElowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void EmediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void FlowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void FmediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void GbLowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void GbMediumPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void GlowPress(MouseEvent event) {
+
+    }
+
+    @FXML
+    void GmediumPress(MouseEvent event) {
+
+    }
+
 }
