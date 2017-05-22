@@ -1,16 +1,17 @@
 package instrument;
 
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class KeyBoardPiano implements KeyListener{
-	private List<Integer> key = new ArrayList<>();
-	private Map<Integer, Note> notes = new HashMap<>();
+public class KeyBoardPiano {
+	private List<KeyCode> key = new ArrayList<>();
+	private Map<KeyCode, Note> notes = new HashMap<>();
 	private int channel = 0;
 	private SoundProvider sound = new SoundProvider(90);
 //	private List<Integer> row1 = Arrays.asList(49,50,51,52,53,544,55,56,57,48,45,61);
@@ -22,31 +23,31 @@ public class KeyBoardPiano implements KeyListener{
 	}
 	
 	private void createDefaultNote() {
-		notes.put(65,new Note(65,NoteState.C,"Low_C",4));
-		notes.put(87,new Note(87,NoteState.CS,"Low_CS",4));
-		notes.put(83,new Note(83,NoteState.D,"Low_D",4));
-		notes.put(69,new Note(69,NoteState.DS,"Low_DS",4));
-		notes.put(68,new Note(68,NoteState.E,"Low_E",4));
-		notes.put(70,new Note(70,NoteState.F,"Low_F",4));
-		notes.put(84,new Note(84,NoteState.FS,"Low_FS",4));
-		notes.put(71,new Note(71,NoteState.G,"Low_G",4));
-		notes.put(89,new Note(89,NoteState.GS,"Low_GS",4));
-		notes.put(72,new Note(72,NoteState.A,"Low_A",4));
-		notes.put(85,new Note(85,NoteState.AS,"Low_AS",4));
-		notes.put(74,new Note(74,NoteState.B,"Low_B",4));
-		notes.put(75,new Note(75,NoteState.C,"Medium_C",5));
-		notes.put(79,new Note(79,NoteState.CS,"Medium_CS",5));
-		notes.put(76,new Note(76,NoteState.D,"Medium_D",5));
-		notes.put(80,new Note(80,NoteState.DS,"Medium_DS",5));
-		notes.put(59,new Note(59,NoteState.E,"Medium_E",5));
-		notes.put(222,new Note(222,NoteState.F,"Medium_F",5));
-		notes.put(93,new Note(93,NoteState.FS,"Medium_FS",5));
-		notes.put(10,new Note(10,NoteState.G,"Medium_G",5));
-		notes.put(92,new Note(92,NoteState.GS,"Medium_GS",5));
-		notes.put(100,new Note(100,NoteState.A,"Medium_A",5));
-		notes.put(103,new Note(103,NoteState.AS,"Medium_AS",5));
-		notes.put(101,new Note(101,NoteState.B,"Medium_B",5));
-		notes.put(102,new Note(102,NoteState.C,"High_B",6));
+		notes.put(KeyCode.A,new Note(KeyCode.A,NoteState.C,"Low_C",4));
+		notes.put(KeyCode.W,new Note(KeyCode.W,NoteState.Db,"Low_Db",4));
+		notes.put(KeyCode.S,new Note(KeyCode.S,NoteState.D,"Low_D",4));
+		notes.put(KeyCode.E,new Note(KeyCode.E,NoteState.Eb,"Low_Eb",4));
+		notes.put(KeyCode.D,new Note(KeyCode.D,NoteState.E,"Low_E",4));
+		notes.put(KeyCode.F,new Note(KeyCode.F,NoteState.F,"Low_F",4));
+		notes.put(KeyCode.T,new Note(KeyCode.T,NoteState.Gb,"Low_Gb",4));
+		notes.put(KeyCode.G,new Note(KeyCode.G,NoteState.G,"Low_G",4));
+		notes.put(KeyCode.Y,new Note(KeyCode.Y,NoteState.Ab,"Low_Ab",4));
+		notes.put(KeyCode.H,new Note(KeyCode.H,NoteState.A,"Low_A",4));
+		notes.put(KeyCode.U,new Note(KeyCode.U,NoteState.Bb,"Low_Bb",4));
+		notes.put(KeyCode.J,new Note(KeyCode.J,NoteState.B,"Low_B",4));
+		notes.put(KeyCode.K,new Note(KeyCode.K,NoteState.C,"Medium_C",5));
+		notes.put(KeyCode.O,new Note(KeyCode.O,NoteState.Db,"Medium_Db",5));
+		notes.put(KeyCode.L,new Note(KeyCode.L,NoteState.D,"Medium_D",5));
+		notes.put(KeyCode.P,new Note(KeyCode.P,NoteState.Eb,"Medium_Eb",5));
+		notes.put(KeyCode.SEMICOLON,new Note(KeyCode.SEMICOLON,NoteState.E,"Medium_E",5));
+		notes.put(KeyCode.QUOTE,new Note(KeyCode.QUOTE,NoteState.F,"Medium_F",5));
+		notes.put(KeyCode.CLOSE_BRACKET,new Note(KeyCode.CLOSE_BRACKET,NoteState.Gb,"Medium_Gb",5));
+		notes.put(KeyCode.ENTER,new Note(KeyCode.ENTER,NoteState.G,"Medium_G",5));
+		notes.put(KeyCode.BACK_SLASH,new Note(KeyCode.BACK_SLASH,NoteState.Ab,"Medium_Ab",5));
+		notes.put(KeyCode.NUMPAD4,new Note(KeyCode.NUMPAD4,NoteState.A,"Medium_A",5));
+		notes.put(KeyCode.NUMPAD7,new Note(KeyCode.NUMPAD7,NoteState.Bb,"Medium_Bb",5));
+		notes.put(KeyCode.NUMPAD5,new Note(KeyCode.NUMPAD5,NoteState.B,"Medium_B",5));
+		notes.put(KeyCode.NUMPAD6,new Note(KeyCode.NUMPAD6,NoteState.C,"High_B",6));
 		
 	}
 
@@ -105,7 +106,6 @@ public class KeyBoardPiano implements KeyListener{
 //		return NoteState.C;
 //	}
 
-	@Override
 	public void keyPressed(KeyEvent e) {
 //		System.out.println(e.getKeyCode());
 //		if(row1.contains(e.getKeyCode())){
@@ -126,16 +126,15 @@ public class KeyBoardPiano implements KeyListener{
 //				sound.play(notePress(e).getNote(6), 0);
 //			} 
 //		}
-		if(notes.containsKey(e.getKeyCode())){
-			if(!key.contains(e.getKeyCode())){
-				System.out.println(e.getKeyCode());
-				key.add(e.getKeyCode());
-				sound.play(notes.get(e.getKeyCode()).getNote());
+		if(notes.containsKey(e.getCode())){
+			if(!key.contains(e.getCode())){
+				System.out.println(e.getCode());
+				key.add(e.getCode());
+				sound.play(notes.get(e.getCode()).getNote());
 			} 
 		}
 	}
 
-	@Override
 	public void keyReleased(KeyEvent e) {
 //		if(row1.contains(e.getKeyCode())){
 //			sound.stop(notePress(e).getNote(4), 0);
@@ -152,13 +151,12 @@ public class KeyBoardPiano implements KeyListener{
 //			key.remove((Integer)e.getKeyCode());
 //			count = 0;
 //		}
-		if(notes.containsKey(e.getKeyCode())){
-			sound.stop(notes.get(e.getKeyCode()).getNote());
-			key.remove((Integer)e.getKeyCode());
+		if(notes.containsKey(e.getCode())){
+			sound.stop(notes.get(e.getCode()).getNote());
+			key.remove(e.getCode());
 		}
 	}
 
-	@Override
 	public void keyTyped(KeyEvent e) {
 		// TODO Auto-generated method stub
 		
