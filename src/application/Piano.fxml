@@ -5,7 +5,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="background" fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PianoController">
+<AnchorPane id="background" fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#backgroundPressed" onKeyReleased="#backgroundReleased" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PianoController">
    <children>
       <Rectangle fx:id="Clow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="60.0" layoutY="83.0" onMousePressed="#ClowPress" onMouseReleased="#ClowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
       <Rectangle fx:id="Dlow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="92.0" layoutY="83.0" onMousePressed="#DlowPress" onMouseReleased="#DlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
@@ -15,7 +15,7 @@
       <Rectangle fx:id="Alow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="220.0" layoutY="83.0" onMousePressed="#AlowPress" stroke="BLACK" strokeType="INSIDE" width="32.0" />
       <Rectangle fx:id="Blow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="252.0" layoutY="83.0" onMousePressed="#BlowPress" stroke="BLACK" strokeType="INSIDE" width="32.0" />
       <Rectangle fx:id="Cmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="284.0" layoutY="83.0" onMousePressed="#CmediumPress" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Dmeduim" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="316.0" layoutY="83.0" onMousePressed="#DmediumPress" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="Dmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="316.0" layoutY="83.0" onMousePressed="#DmediumPress" stroke="BLACK" strokeType="INSIDE" width="32.0" />
       <Rectangle fx:id="Emedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="348.0" layoutY="83.0" onMousePressed="#EmediumPress" stroke="BLACK" strokeType="INSIDE" width="32.0" />
       <Rectangle fx:id="Fmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="380.0" layoutY="83.0" onMousePressed="#FmediumPress" stroke="BLACK" strokeType="INSIDE" width="32.0" />
       <Rectangle fx:id="Gmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="412.0" layoutY="83.0" onMousePressed="#GmediumPress" stroke="BLACK" strokeType="INSIDE" width="32.0" />
