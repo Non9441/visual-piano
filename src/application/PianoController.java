@@ -2,7 +2,7 @@ package application;
 
 import java.util.Map;
 
-import instrument.KeyBoardPiano;
+import instrument.Piano;
 import instrument.Note;
 import instrument.SoundProvider;
 import javafx.event.EventHandler;
@@ -16,9 +16,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 public class PianoController {
-	private KeyBoardPiano piano = KeyBoardPiano.getInstance();
+	private Piano piano = Piano.getInstance();
 	private Map<KeyCode, Note> notes = piano.getAvailableNotes();
-	private SoundProvider sound = new SoundProvider(90);
 	
 	@FXML
 	private AnchorPane background;
@@ -299,158 +298,303 @@ public class PianoController {
 	private TextField AbmediumText;
 
 	@FXML
-	void AbLowPress(MouseEvent event) {
+    void AblowPressed(MouseEvent event) {
+		piano.keyPressed(Ablow.getId());
+		setColor(Ablow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void AblowReleased(MouseEvent event) {
+    	piano.keyReleased(Ablow.getId());
+    	setColor(Ablow.getId(), 0);
+    }
 
-	@FXML
-	void AbMediumPress(MouseEvent event) {
+    @FXML
+    void AbmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Abmedium.getId());
+    	setColor(Abmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void AbmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Abmedium.getId());
+    	setColor(Abmedium.getId(), 0);
+    }
 
-	@FXML
-	void AlowPress(MouseEvent event) {
+    @FXML
+    void AlowPressed(MouseEvent event) {
+    	piano.keyPressed(Alow.getId());
+    	setColor(Alow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void AlowReleased(MouseEvent event) {
+    	piano.keyReleased(Alow.getId());
+    	setColor(Alow.getId(), 0);
+    }
 
-	@FXML
-	void AmediumPress(MouseEvent event) {
+    @FXML
+    void AmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Amedium.getId());
+    	setColor(Amedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void AmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Amedium.getId());
+    	setColor(Amedium.getId(), 0);
+    }
 
-	@FXML
-	void BbLowPress(MouseEvent event) {
+    @FXML
+    void BblowPressed(MouseEvent event) {
+    	piano.keyPressed(Bblow.getId());
+    	setColor(Bblow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void BblowReleased(MouseEvent event) {
+    	piano.keyReleased(Bblow.getId());
+    	setColor(Bblow.getId(), 0);
+    }
 
-	@FXML
-	void BbMediumPress(MouseEvent event) {
+    @FXML
+    void BbmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Bbmedium.getId());
+    	setColor(Bbmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void BbmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Bbmedium.getId());
+    	setColor(Bbmedium.getId(), 0);
+    }
 
-	@FXML
-	void BlowPress(MouseEvent event) {
+    @FXML
+    void BlowPressed(MouseEvent event) {
+    	piano.keyPressed(Blow.getId());
+    	setColor(Blow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void BlowReleased(MouseEvent event) {
+    	piano.keyReleased(Blow.getId());
+    	setColor(Blow.getId(), 0);
+    }
 
-	@FXML
-	void BmediumPress(MouseEvent event) {
+    @FXML
+    void BmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Bmedium.getId());
+    	setColor(Bmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void BmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Bmedium.getId());
+    	setColor(Bmedium.getId(), 0);
+    }
 
-	@FXML
-	void ChighPress(MouseEvent event) {
+    @FXML
+    void ChighPressed(MouseEvent event) {
+    	piano.keyPressed(Chigh.getId());
+    	setColor(Chigh.getId(), 1);
+    }
 
-	}
+    @FXML
+    void ChighReleased(MouseEvent event) {
+    	piano.keyReleased(Chigh.getId());
+    	setColor(Chigh.getId(), 0);
+    }
 
-	@FXML
-	void ClowPress(MouseEvent event) {
-		Clow.setFill(Color.YELLOW);
-	}
+    @FXML
+    void ClowPressed(MouseEvent event) {
+    	piano.keyPressed(Clow.getId());
+    	setColor(Clow.getId(), 1);
+    }
 
-	@FXML
-	void ClowReleased(MouseEvent event) {
-		Clow.setFill(Color.WHITE);
-	}
+    @FXML
+    void ClowReleased(MouseEvent event) {
+    	piano.keyReleased(Clow.getId());
+    	setColor(Clow.getId(), 0);
+    }
 
-	@FXML
-	void CmediumPress(MouseEvent event) {
+    @FXML
+    void CmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Cmedium.getId());
+    	setColor(Cmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void CmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Cmedium.getId());
+    	setColor(Cmedium.getId(), 0);
+    }
 
-	@FXML
-	void DbLowPress(MouseEvent event) {
+    @FXML
+    void DblowPressed(MouseEvent event) {
+    	piano.keyPressed(Dblow.getId());
+    	setColor(Dblow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void DblowReleased(MouseEvent event) {
+    	piano.keyReleased(Dblow.getId());
+    	setColor(Dblow.getId(), 0);
+    }
 
-	@FXML
-	void DbLowReleased(MouseEvent event) {
+    @FXML
+    void DbmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Dbmedium.getId());
+    	setColor(Dbmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void DbmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Dbmedium.getId());
+    	setColor(Dbmedium.getId(), 0);
+    }
 
-	@FXML
-	void DbMediumPress(MouseEvent event) {
+    @FXML
+    void DlowPressed(MouseEvent event) {
+    	piano.keyPressed(Dlow.getId());
+    	setColor(Dlow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void DlowReleased(MouseEvent event) {
+    	piano.keyReleased(Dlow.getId());
+    	setColor(Dlow.getId(), 0);
+    }
 
-	@FXML
-	void DlowPress(MouseEvent event) {
+    @FXML
+    void DmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Dmedium.getId());
+    	setColor(Dmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void DmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Dmedium.getId());
+    	setColor(Dmedium.getId(),0);
+    }
 
-	@FXML
-	void DlowReleased(MouseEvent event) {
+    @FXML
+    void EblowPressed(MouseEvent event) {
+    	piano.keyPressed(Eblow.getId());
+    	setColor(Eblow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void EblowRelease(MouseEvent event) {
+    	piano.keyReleased(Eblow.getId());
+    	setColor(Eblow.getId(), 0);
+    }
 
-	@FXML
-	void DmediumPress(MouseEvent event) {
+    @FXML
+    void EbmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Ebmedium.getId());
+    	setColor(Ebmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void EbmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Ebmedium.getId());
+    	setColor(Ebmedium.getId(), 0);
+    }
 
-	@FXML
-	void EbLowPress(MouseEvent event) {
+    @FXML
+    void ElowPressed(MouseEvent event) {
+    	piano.keyPressed(Elow.getId());
+    	setColor(Elow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void ElowReleased(MouseEvent event) {
+    	piano.keyReleased(Elow.getId());
+    	setColor(Elow.getId(), 0);
+    }
 
-	@FXML
-	void EbMediumPress(MouseEvent event) {
+    @FXML
+    void EmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Emedium.getId());
+    	setColor(Emedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void EmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Emedium.getId());
+    	setColor(Emedium.getId(), 0);
+    }
 
-	@FXML
-	void EblowRelease(MouseEvent event) {
+    @FXML
+    void FlowPressd(MouseEvent event) {
+    	piano.keyPressed(Flow.getId());
+    	setColor(Flow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void FlowReleased(MouseEvent event) {
+    	piano.keyReleased(Flow.getId());
+    	setColor(Flow.getId(), 0);
+    }
 
-	@FXML
-	void ElowPress(MouseEvent event) {
+    @FXML
+    void FmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Fmedium.getId());
+    	setColor(Fmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void FmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Fmedium.getId());
+    	setColor(Fmedium.getId(), 0);
+    }
 
-	@FXML
-	void ElowRelease(MouseEvent event) {
+    @FXML
+    void GblowPressed(MouseEvent event) {
+    	piano.keyPressed(Gblow.getId());
+    	setColor(Gblow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void GblowReleased(MouseEvent event) {
+    	piano.keyReleased(Gblow.getId());
+    	setColor(Gblow.getId(), 0);
+    }
 
-	@FXML
-	void EmediumPress(MouseEvent event) {
+    @FXML
+    void GbmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Gbmedium.getId());
+    	setColor(Gbmedium.getId(), 1);
+    }
 
-	}
+    @FXML
+    void GbmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Gbmedium.getId());
+    	setColor(Gbmedium.getId(), 0);
+    }
 
-	@FXML
-	void FlowPress(MouseEvent event) {
+    @FXML
+    void GlowPressed(MouseEvent event) {
+    	piano.keyPressed(Glow.getId());
+    	setColor(Glow.getId(), 1);
+    }
 
-	}
+    @FXML
+    void GlowReleased(MouseEvent event) {
+    	piano.keyReleased(Glow.getId());
+    	setColor(Glow.getId(), 0);
+    }
 
-	@FXML
-	void FlowRelease(MouseEvent event) {
+    @FXML
+    void GmediumPressed(MouseEvent event) {
+    	piano.keyPressed(Gmedium.getId());
+    	setColor(Gmedium.getId(), 1);
+    }
 
-	}
-
-	@FXML
-	void FmediumPress(MouseEvent event) {
-
-	}
-
-	@FXML
-	void GbLowPress(MouseEvent event) {
-
-	}
-
-	@FXML
-	void GbMediumPress(MouseEvent event) {
-
-	}
-
-	@FXML
-	void GlowPress(MouseEvent event) {
-
-	}
-
-	@FXML
-	void GmediumPress(MouseEvent event) {
-
-	}
+    @FXML
+    void GmediumReleased(MouseEvent event) {
+    	piano.keyReleased(Gmedium.getId());
+    	setColor(Gmedium.getId(), 0);
+    }
 
 }

@@ -4,13 +4,13 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
-public class KeyBoardPiano {
-	private static KeyBoardPiano piano;
+public class Piano {
+	private static Piano piano;
 	private List<KeyCode> key = new ArrayList<>();
 	private Map<KeyCode, Note> notes = new HashMap<>();
 	private int channel = 0;
@@ -19,7 +19,7 @@ public class KeyBoardPiano {
 //	private List<Integer> row2 = Arrays.asList(81,87,69,82,84,89,85,73,79,80,91,93);
 //	private List<Integer> row3 = Arrays.asList(65,83,68,70,71,72,74,75,76,59,222,10);
 	
-	private KeyBoardPiano(){
+	private Piano(){
 		createDefaultNote();
 	}
 	
@@ -52,10 +52,14 @@ public class KeyBoardPiano {
 		
 	}
 	
-	public static KeyBoardPiano getInstance(){
+	public static Piano getInstance(){
 		if(piano==null){
-			piano = new KeyBoardPiano();
+			piano = new Piano();
 		} return piano;
+	}
+	
+	public Set<KeyCode> getAvailableKey(){
+		return notes.keySet();
 	}
 	
 	public Map<KeyCode, Note> getAvailableNotes(){
@@ -71,11 +75,27 @@ public class KeyBoardPiano {
 			} 
 		}
 	}
+	
+	public void keyPressed(String note){
+		for (KeyCode k : getAvailableKey()){
+			if(notes.get(k).toString().equals(note)){
+				sound.play(notes.get(k).getNote());
+			}
+		}
+	}
 
 	public void keyReleased(KeyEvent e) {
 		if(notes.containsKey(e.getCode())){
 			sound.stop(notes.get(e.getCode()).getNote());
 			key.remove(e.getCode());
+		}
+	}
+	
+	public void keyReleased(String note){
+		for (KeyCode k : getAvailableKey()){
+			if(notes.get(k).toString().equals(note)){
+				sound.stop(notes.get(k).getNote());
+			}
 		}
 	}
 

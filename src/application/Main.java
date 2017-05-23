@@ -1,9 +1,5 @@
 package application;
 
-import javax.xml.stream.EventFilter;
-
-import instrument.KeyBoardPiano;
-import instrument.SoundProvider;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -11,11 +7,9 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 
 public class Main extends Application {
-	private KeyBoardPiano piano = KeyBoardPiano.getInstance();
-	private SoundProvider sound = new SoundProvider(90);
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
