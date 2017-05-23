@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+
 public class Piano {
 	private static Piano piano;
 	private List<KeyCode> key = new ArrayList<>();

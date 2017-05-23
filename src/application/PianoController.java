@@ -15,6 +15,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
+/**
+ * This class controlls all the activity on gui.
+ * @author Non
+ *
+ */
 public class PianoController {
 	private Piano piano = Piano.getInstance();
 	private Map<KeyCode, Note> notes = piano.getAvailableNotes();
@@ -22,6 +27,10 @@ public class PianoController {
 	@FXML
 	private AnchorPane background;
 	
+	/**
+	 * Make piano provide sound depends on key that user pressed.
+	 * @param event is a key press event from user.
+	 */
 	@FXML
 	void backgroundPressed(KeyEvent event) {
 		if(notes.containsKey(event.getCode())){
@@ -30,7 +39,11 @@ public class PianoController {
 			setColor(pressNote, 1);
 		}
 	}
-
+	
+	/**
+	 * Make piano stop playing note depends on which key user released.
+	 * @param event is a key release event from user.
+	 */
 	@FXML
 	void backgroundReleased(KeyEvent event) {
 		if(notes.containsKey(event.getCode())){
@@ -40,6 +53,12 @@ public class PianoController {
 		}
 	}
 	
+	/**
+	 * Change color of piano button on gui when it was pressed or released.
+	 * @param id is a button id of button that you want to change it's color.
+	 * @param status is a integer which define what color will be set on button.
+	 * 		  When integer is 1 it's mean button has been pressed and  is 0 if button has been released.
+	 */
 	public void setColor(String id, int status){
 		Color color1 = Color.YELLOW;
 		Color color2 = Color.WHITE;
