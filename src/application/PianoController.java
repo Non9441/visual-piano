@@ -4,8 +4,6 @@ import java.util.Map;
 
 import instrument.Piano;
 import instrument.Note;
-import instrument.SoundProvider;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -16,7 +14,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 /**
- * This class controlls all the activity on gui.
+ * This class controls all the activities on gui.
  * @author Non
  *
  */

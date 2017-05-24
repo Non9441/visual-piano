@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane id="background" fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#backgroundPressed" onKeyReleased="#backgroundReleased" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PianoController">
    <children>
@@ -157,5 +158,6 @@
             <Font size="10.0" />
          </font>
       </TextField>
+      <Text layoutX="241.0" layoutY="50.0" stroke="#c77070" strokeType="OUTSIDE" strokeWidth="0.0" text="VISAUL-PIANO" />
    </children>
 </AnchorPane>
