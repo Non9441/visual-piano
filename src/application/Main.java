@@ -1,9 +1,5 @@
 package application;
-<<<<<<< HEAD:src/application/Main.java
 
-import java.io.IOException;
-=======
->>>>>>> 97d53e10669486f9732bb7b1e47a7e43f479c4a7:src/application/Main.java
 
 import javafx.application.Application;
 import javafx.event.EventHandler;
