@@ -1,34 +1,66 @@
 package instrument;
 
+import javafx.scene.input.KeyCode;
+
+/**
+ * This class represent each note on piano.
+ * It has it's own name, it's note and it's KeyCode to use on keyboard.
+ * @author Non
+ *
+ */
 public class Note {
-	private int keycode;
+	private KeyCode key;
 	private NoteState state;
 	private String name;
 	private int octave;
 	
-	public Note(int keycode, NoteState state, String name, int octave){
-		this.keycode = keycode;
+	/**
+	 * A Constructor to define new notes and it's value.
+	 * @param key is a KeyCode represent which key this note are on keyboard.
+	 * @param state is a note state for this note.
+	 * @param name is a musical note name for this note.
+	 * @param octave is integer represent which octave this note on.
+	 */
+	public Note(KeyCode key, NoteState state, String name, int octave){
+		this.key = key;
 		this.state = state;
 		this.name = name;
 		this.octave = octave;
 	}
 	
-	public int getKeycode(){
-		return this.keycode;
+	/**
+	 * get this note KeyCode.
+	 * @return this note KeyCode.
+	 */
+	public KeyCode getKey(){
+		return this.key;
 	}
 	
+	/**
+	 * increase an octave of this note.
+	 */
 	public void increaseOctave(){
 		this.octave++;
 	}
 	
+	/**
+	 * decrease an octave of this note.
+	 */
 	public void decreaseOcctave(){
 		this.octave--;
 	}
 	
+	/**
+	 * get note value from this note after calculate with it's octave.
+	 * @return integer of note value of this note.
+	 */
 	public int getNote(){
 		return state.getNote(octave);
 	}
 	
+	/**
+	 * get this note name.
+	 */
 	public String toString(){
 		return this.name;
 	}
