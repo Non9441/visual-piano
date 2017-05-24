@@ -613,6 +613,14 @@ public class PianoController {
     	piano.keyReleased(Gmedium.getId());
     	setColor(Gmedium.getId(), 0);
     }
+    @FXML
+    void DecreaseOctave(MouseEvent event) {
 
+    }
+
+    @FXML
+    void IncreaseOctave(MouseEvent event) {
+
+    }
 }
 
