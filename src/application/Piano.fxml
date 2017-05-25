@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#backgroundPressed" onKeyReleased="#backgroundReleased" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PianoController">
    <children>
@@ -35,127 +34,127 @@
       <Rectangle fx:id="Gbmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="402.0" layoutY="83.0" onMousePressed="#GbmediumPressed" onMouseReleased="#GbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
       <Rectangle fx:id="Abmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="434.0" layoutY="83.0" onMousePressed="#AbmediumPressed" onMouseReleased="#AbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
       <Rectangle fx:id="Bbmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="466.0" layoutY="83.0" onMousePressed="#BbmediumPressed" onMouseReleased="#BbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <TextField fx:id="Bmediumtext" alignment="CENTER" editable="false" layoutX="482.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="5">
+      <TextField fx:id="BmediumText" alignment="CENTER" editable="false" layoutX="482.0" layoutY="278.0" onKeyPressed="#TextBmediumPressed" prefHeight="31.0" prefWidth="20.0" text="5">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="AmediumText" alignment="CENTER" editable="false" layoutX="450.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="4">
+      <TextField fx:id="AmediumText" alignment="CENTER" editable="false" layoutX="450.0" layoutY="278.0" onKeyPressed="#TextAmediumPressed" prefHeight="31.0" prefWidth="20.0" text="4">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="GmediumText" alignment="CENTER" editable="false" layoutX="418.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="E">
+      <TextField fx:id="GmediumText" alignment="CENTER" editable="false" layoutX="418.0" layoutY="278.0" onKeyPressed="#TextGmediumPressed" prefHeight="31.0" prefWidth="20.0" text="E">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="FmediumText" alignment="CENTER" editable="false" layoutX="386.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="'">
+      <TextField fx:id="FmediumText" alignment="CENTER" editable="false" layoutX="386.0" layoutY="278.0" onKeyPressed="#TextFmediumPressed" prefHeight="31.0" prefWidth="20.0" text="'">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="EmediumText" alignment="CENTER" editable="false" layoutX="354.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text=";">
+      <TextField fx:id="EmediumText" alignment="CENTER" editable="false" layoutX="354.0" layoutY="278.0" onKeyPressed="#TextEmediumPressed" prefHeight="31.0" prefWidth="20.0" text=";">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="DmediumText" alignment="CENTER" editable="false" layoutX="322.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="l">
+      <TextField fx:id="DmediumText" alignment="CENTER" editable="false" layoutX="322.0" layoutY="278.0" onKeyPressed="#TextDmediumPressed" prefHeight="31.0" prefWidth="20.0" text="l">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="CmediumText" alignment="CENTER" editable="false" layoutX="290.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="k">
+      <TextField fx:id="CmediumText" alignment="CENTER" editable="false" layoutX="290.0" layoutY="278.0" onKeyPressed="#TextCmediumPressed" prefHeight="31.0" prefWidth="20.0" text="k">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="BlowText" alignment="CENTER" editable="false" layoutX="258.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="j">
+      <TextField fx:id="BlowText" alignment="CENTER" editable="false" layoutX="258.0" layoutY="278.0" onKeyPressed="#TextBlowPressed" prefHeight="31.0" prefWidth="20.0" text="j">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="AlowText" alignment="CENTER" editable="false" layoutX="226.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="h">
+      <TextField fx:id="AlowText" alignment="CENTER" editable="false" layoutX="226.0" layoutY="278.0" onKeyPressed="#TextAlowPressed" prefHeight="31.0" prefWidth="20.0" text="h">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="GlowText" alignment="CENTER" editable="false" layoutX="194.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="g">
+      <TextField fx:id="GlowText" alignment="CENTER" editable="false" layoutX="194.0" layoutY="278.0" onKeyPressed="#TextGlowPressed" prefHeight="31.0" prefWidth="20.0" text="g">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="FlowText" alignment="CENTER" editable="false" layoutX="162.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="f">
+      <TextField fx:id="FlowText" alignment="CENTER" editable="false" layoutX="162.0" layoutY="278.0" onKeyPressed="#TextFlowPressed" prefHeight="31.0" prefWidth="20.0" text="f">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="ElowText" alignment="CENTER" editable="false" layoutX="130.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="d">
+      <TextField fx:id="ElowText" alignment="CENTER" editable="false" layoutX="130.0" layoutY="278.0" onKeyPressed="#TextElowPressed" prefHeight="31.0" prefWidth="20.0" text="d">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="DlowText" alignment="CENTER" editable="false" layoutX="98.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="s">
+      <TextField fx:id="DlowText" alignment="CENTER" editable="false" layoutX="98.0" layoutY="278.0" onKeyPressed="#TextDlowPressed" prefHeight="31.0" prefWidth="20.0" text="s">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="ClowText" alignment="CENTER" editable="false" layoutX="66.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="a">
+      <TextField fx:id="ClowText" alignment="CENTER" editable="false" layoutX="66.0" layoutY="278.0" onKeyPressed="#TextClowPressed" prefHeight="31.0" prefWidth="20.0" text="a">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="EbmediumText" alignment="CENTER" editable="false" layoutX="338.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="p">
+      <TextField fx:id="EbmediumText" alignment="CENTER" editable="false" layoutX="338.0" layoutY="201.0" onKeyPressed="#TextEbmediumPressed" prefHeight="31.0" prefWidth="20.0" text="p">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="DbmediumText" alignment="CENTER" editable="false" layoutX="306.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="o">
+      <TextField fx:id="DbmediumText" alignment="CENTER" editable="false" layoutX="306.0" layoutY="201.0" onKeyPressed="#TextDbmediumPressed" prefHeight="31.0" prefWidth="20.0" text="o">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="BblowText" alignment="CENTER" editable="false" layoutX="242.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="u">
+      <TextField fx:id="BblowText" alignment="CENTER" editable="false" layoutX="242.0" layoutY="201.0" onKeyPressed="#TextBblowPressed" prefHeight="31.0" prefWidth="20.0" text="u">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="AblowText" alignment="CENTER" editable="false" layoutX="210.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="y">
+      <TextField fx:id="AblowText" alignment="CENTER" editable="false" layoutX="210.0" layoutY="201.0" onKeyPressed="#TextAblowPressed" prefHeight="31.0" prefWidth="20.0" text="y">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="GblowText" alignment="CENTER" editable="false" layoutX="178.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="t">
+      <TextField fx:id="GblowText" alignment="CENTER" editable="false" layoutX="178.0" layoutY="201.0" onKeyPressed="#TextGblowPressed" prefHeight="31.0" prefWidth="20.0" text="t">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="EblowText" alignment="CENTER" editable="false" layoutX="114.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="e">
+      <TextField fx:id="EblowText" alignment="CENTER" editable="false" layoutX="114.0" layoutY="201.0" onKeyPressed="#TextEblowPressed" prefHeight="31.0" prefWidth="20.0" text="e">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="DblowText" alignment="CENTER" editable="false" layoutX="82.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="w">
+      <TextField fx:id="DblowText" alignment="CENTER" editable="false" layoutX="82.0" layoutY="201.0" onKeyPressed="#TextDblowPressed" prefHeight="31.0" prefWidth="20.0" text="w">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="ChighText" alignment="CENTER" editable="false" layoutX="514.0" layoutY="278.0" prefHeight="31.0" prefWidth="20.0" text="6">
+      <TextField fx:id="ChighText" alignment="CENTER" editable="false" layoutX="514.0" layoutY="278.0" onKeyPressed="#TextChighPressed" prefHeight="31.0" prefWidth="20.0" text="6">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="BbmediumText" alignment="CENTER" editable="false" layoutX="466.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="7">
+      <TextField fx:id="BbmediumText" alignment="CENTER" editable="false" layoutX="466.0" layoutY="201.0" onKeyPressed="#TextBbmediumPressed" prefHeight="31.0" prefWidth="20.0" text="7">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="AbmediumText" alignment="CENTER" editable="false" layoutX="434.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="\\">
+      <TextField fx:id="AbmediumText" alignment="CENTER" editable="false" layoutX="434.0" layoutY="201.0" onKeyPressed="#TextAbmediumPressed" prefHeight="31.0" prefWidth="20.0" text="\\">
          <font>
             <Font size="10.0" />
          </font>
       </TextField>
-      <TextField fx:id="GmediumText" alignment="CENTER" editable="false" layoutX="402.0" layoutY="201.0" prefHeight="31.0" prefWidth="20.0" text="]">
+      <TextField fx:id="GbmediumText" alignment="CENTER" editable="false" layoutX="402.0" layoutY="201.0" onKeyPressed="#TextGbmediumPressed" prefHeight="31.0" prefWidth="20.0" text="]">
          <font>
             <Font size="10.0" />
          </font>

@@ -1,6 +1,8 @@
 package application;
 
+import java.util.HashSet;
 import java.util.Map;
+import java.util.ResourceBundle;
 import java.util.Set;
 
 import instrument.Piano;
@@ -25,7 +27,67 @@ public class PianoController {
 	private Piano piano = Piano.getInstance();
 	private Map<KeyCode, Note> notes = piano.getAvailableNotes();
 	private Set<KeyCode> key = notes.keySet();
-
+	private ResourceBundle rb = piano.getResource();
+	
+	@FXML
+    public void initialize() {
+		ClowText.setText(rb.getString("clowText"));
+        DblowText.setText(rb.getString("dblowText"));
+        DlowText.setText(rb.getString("dlowText"));
+        EblowText.setText(rb.getString("eblowText"));
+        ElowText.setText(rb.getString("elowText"));
+        FlowText.setText(rb.getString("flowText"));
+        GblowText.setText(rb.getString("gblowText"));
+        GlowText.setText(rb.getString("glowText"));
+        AblowText.setText(rb.getString("ablowText"));
+        AlowText.setText(rb.getString("alowText"));
+        BblowText.setText(rb.getString("bblowText"));
+        BlowText.setText(rb.getString("blowText"));
+        CmediumText.setText(rb.getString("cmediumText"));
+        DbmediumText.setText(rb.getString("dbmediumText"));
+        DmediumText.setText(rb.getString("dmediumText"));
+        EbmediumText.setText(rb.getString("ebmediumText"));
+        EmediumText.setText(rb.getString("emediumText"));
+        FmediumText.setText(rb.getString("fmediumText"));
+        GbmediumText.setText(rb.getString("gbmediumText"));
+        GmediumText.setText(rb.getString("gmediumText"));
+        AbmediumText.setText(rb.getString("abmediumText"));
+        AmediumText.setText(rb.getString("amediumText"));
+        BbmediumText.setText(rb.getString("bbmediumText"));
+        BmediumText.setText(rb.getString("bmediumText"));
+        ChighText.setText(rb.getString("chighText"));
+    }
+	
+	public Set<String> getAlltext(){
+		Set<String> alltext = new HashSet<>();
+		alltext.add(ClowText.getText());
+        alltext.add(DblowText.getText());
+        alltext.add(DlowText.getText());
+        alltext.add(EblowText.getText());
+        alltext.add(ElowText.getText());
+        alltext.add(FlowText.getText());
+        alltext.add(GblowText.getText());
+        alltext.add(GlowText.getText());
+        alltext.add(AblowText.getText());
+        alltext.add(AlowText.getText());
+        alltext.add(BblowText.getText());
+        alltext.add(BlowText.getText());
+        alltext.add(CmediumText.getText());
+        alltext.add(DbmediumText.getText());
+        alltext.add(DmediumText.getText());
+        alltext.add(EbmediumText.getText());
+        alltext.add(EmediumText.getText());
+        alltext.add(FmediumText.getText());
+        alltext.add(GbmediumText.getText());
+        alltext.add(GmediumText.getText());
+        alltext.add(AbmediumText.getText());
+        alltext.add(AmediumText.getText());
+        alltext.add(BbmediumText.getText());
+        alltext.add(BmediumText.getText());
+        alltext.add(ChighText.getText());
+        return alltext;
+	}
+	
 	@FXML
 	private AnchorPane background;
 
@@ -325,13 +387,16 @@ public class PianoController {
 	private Rectangle Bbmedium;
 
 	@FXML
-	private TextField Bmediumtext;
+	private TextField BmediumText;
 
 	@FXML
 	private TextField AmediumText;
 
 	@FXML
 	private TextField GmediumText;
+	
+	@FXML
+	private TextField GbmediumText;
 
 	@FXML
 	private TextField FmediumText;
@@ -717,4 +782,254 @@ public class PianoController {
 			}
 		}
 	}
+	
+	@FXML
+    void TextAblowPressed(KeyEvent event) {
+		if(!getAlltext().contains(event.getText())){
+			AblowText.setText(event.getText());
+			piano.setNote("Ablow", event.getCode());
+			piano.setProp("ablow", event.getCode().getName());
+			piano.setProp("ablowText", event.getText());
+		} 
+    }
+
+    @FXML
+    void TextAbmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		AbmediumText.setText(event.getText());
+        	piano.setNote("Abmedium", event.getCode());
+    		piano.setProp("abmedium", event.getCode().getName());
+    		piano.setProp("abmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextAlowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		AlowText.setText(event.getText());
+        	piano.setNote("Alow", event.getCode());
+    		piano.setProp("alow", event.getCode().getName());
+    		piano.setProp("alowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextAmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		AmediumText.setText(event.getText());
+        	piano.setNote("Amedium", event.getCode());
+    		piano.setProp("amedium", event.getCode().getName());
+    		piano.setProp("amediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextBblowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		BblowText.setText(event.getText());
+        	piano.setNote("Bblow", event.getCode());
+    		piano.setProp("bblow", event.getCode().getName());
+    		piano.setProp("bblowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextBbmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		BbmediumText.setText(event.getText());
+        	piano.setNote("Bbmedium", event.getCode());
+    		piano.setProp("bbmedium", event.getCode().getName());
+    		piano.setProp("bbmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextBlowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		BlowText.setText(event.getText());
+        	piano.setNote("Blow", event.getCode());
+    		piano.setProp("blow", event.getCode().getName());
+    		piano.setProp("blowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextBmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		BmediumText.setText(event.getText());
+        	piano.setNote("Bmedium", event.getCode());
+    		piano.setProp("bmedium", event.getCode().getName());
+    		piano.setProp("bmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextChighPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		ChighText.setText(event.getText());
+        	piano.setNote("Chigh", event.getCode());
+    		piano.setProp("chigh", event.getCode().getName());
+    		piano.setProp("chighText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextClowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		ClowText.setText(event.getText());
+        	piano.setNote("Clow", event.getCode());
+    		piano.setProp("clow", event.getCode().getName());
+    		piano.setProp("clowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextCmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		CmediumText.setText(event.getText());
+        	piano.setNote("Cmedium", event.getCode());
+    		piano.setProp("cmedium", event.getCode().getName());
+    		piano.setProp("cmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextDblowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		DblowText.setText(event.getText());
+        	piano.setNote("Dblow", event.getCode());
+    		piano.setProp("dblow", event.getCode().getName());
+    		piano.setProp("dblowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextDbmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		DbmediumText.setText(event.getText());
+        	piano.setNote("Dbmedium", event.getCode());
+    		piano.setProp("dbmedium", event.getCode().getName());
+    		piano.setProp("dbmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextDlowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		DlowText.setText(event.getText());
+        	piano.setNote("Dlow", event.getCode());
+    		piano.setProp("dlow", event.getCode().getName());
+    		piano.setProp("dlowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextDmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		DmediumText.setText(event.getText());
+        	piano.setNote("Dmedium", event.getCode());
+    		piano.setProp("dmedium", event.getCode().getName());
+    		piano.setProp("dmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextEblowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		EblowText.setText(event.getText());
+        	piano.setNote("Eblow", event.getCode());
+    		piano.setProp("eblow", event.getCode().getName());
+    		piano.setProp("eblowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextEbmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		EbmediumText.setText(event.getText());
+        	piano.setNote("Ebmedium", event.getCode());
+    		piano.setProp("ebmedium", event.getCode().getName());
+    		piano.setProp("ebmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextElowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		ElowText.setText(event.getText());
+        	piano.setNote("Elow", event.getCode());
+    		piano.setProp("elow", event.getCode().getName());
+    		piano.setProp("elowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextEmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		EmediumText.setText(event.getText());
+        	piano.setNote("Emedium", event.getCode());
+    		piano.setProp("emedium", event.getCode().getName());
+    		piano.setProp("emediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextFlowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		FlowText.setText(event.getText());
+        	piano.setNote("Flow", event.getCode());
+    		piano.setProp("flow", event.getCode().getName());
+    		piano.setProp("flowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextFmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		FmediumText.setText(event.getText());
+        	piano.setNote("Fmedium", event.getCode());
+    		piano.setProp("fmedium", event.getCode().getName());
+    		piano.setProp("fmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextGblowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		GblowText.setText(event.getText());
+        	piano.setNote("Gblow", event.getCode());
+    		piano.setProp("gblow", event.getCode().getName());
+    		piano.setProp("gblowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextGbmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		GbmediumText.setText(event.getText());
+        	piano.setNote("Gbmedium", event.getCode());
+    		piano.setProp("gbmedium", event.getCode().getName());
+    		piano.setProp("gbmediumText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextGlowPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		GlowText.setText(event.getText());
+        	piano.setNote("Glow", event.getCode());
+    		piano.setProp("glow", event.getCode().getName());
+    		piano.setProp("glowText", event.getText());
+    	}
+    }
+
+    @FXML
+    void TextGmediumPressed(KeyEvent event) {
+    	if(!getAlltext().contains(event.getText())){
+    		GmediumText.setText(event.getText());
+        	piano.setNote("Gmedium", event.getCode());
+    		piano.setProp("gmedium", event.getCode().getName());
+    		piano.setProp("gmediumText", event.getText());
+    	}
+    }
 }
