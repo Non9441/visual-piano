@@ -104,7 +104,11 @@ public class Piano {
 	public Map<KeyCode, Note> getAvailableNotes() {
 		return this.notes;
 	}
-
+	
+	/**
+	 * Make piano provide sound depend on KeyEvent user gives.
+	 * @param e is KeyEvent that user input.
+	 */
 	public void keyPressed(KeyEvent e) {
 		if (notes.containsKey(e.getCode())) {
 			if (!key.contains(e.getCode())) {
@@ -113,7 +117,11 @@ public class Piano {
 			}
 		}
 	}
-
+	
+	/**
+	 * Make piano provide sound depend on button on ui that user pressed.
+	 * @param note is a note name that you want to play.
+	 */
 	public void keyPressed(String note) {
 		for (KeyCode k : getAvailableKey()) {
 			if (notes.get(k).toString().equals(note)) {
@@ -121,14 +129,22 @@ public class Piano {
 			}
 		}
 	}
-
+	
+	/**
+	 * Make piano stop playing sound depend on which key has been released.
+	 * @param e is a KeyEvent from user released activity.
+	 */
 	public void keyReleased(KeyEvent e) {
 		if (notes.containsKey(e.getCode())) {
 			sound.stop(notes.get(e.getCode()).getNote());
 			key.remove(e.getCode());
 		}
 	}
-
+	
+	/**
+	 * Make piano stop playing depend on which button on ui has been released.
+	 * @param note is a name of note on button that user released.
+	 */
 	public void keyReleased(String note) {
 		for (KeyCode k : getAvailableKey()) {
 			if (notes.get(k).toString().equals(note)) {
