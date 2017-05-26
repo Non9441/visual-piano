@@ -51,6 +51,14 @@ public class Note {
 	}
 	
 	/**
+	 * get current octave that this note are on.
+	 * @return
+	 */
+	public int getOctave(){
+		return octave;
+	}
+	
+	/**
 	 * get note value from this note after calculate with it's octave.
 	 * @return integer of note value of this note.
 	 */
