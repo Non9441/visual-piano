@@ -13,7 +13,7 @@ All you need is just to download a piano.jar file and run it.
 It's a visual piano,  you can increase and decresae octave for higer or lower note. 
 You can change key if you don't like default key.
 
-#   What knowledge you need to write this programe.
+#   What knowledge you need to write this program.
 1) JavaFx
 2) JavaMidi packgage.
 3) SceneBiuilder
