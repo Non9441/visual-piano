@@ -25,31 +25,31 @@ public class Piano {
 	}
 	
 	private void createDefaultNote() {
-		notes.put(KeyCode.A,new Note(KeyCode.A,NoteState.C,"Clow",4));
-		notes.put(KeyCode.W,new Note(KeyCode.W,NoteState.Db,"Dblow",4));
-		notes.put(KeyCode.S,new Note(KeyCode.S,NoteState.D,"Dlow",4));
-		notes.put(KeyCode.E,new Note(KeyCode.E,NoteState.Eb,"Eblow",4));
-		notes.put(KeyCode.D,new Note(KeyCode.D,NoteState.E,"Elow",4));
-		notes.put(KeyCode.F,new Note(KeyCode.F,NoteState.F,"Flow",4));
-		notes.put(KeyCode.T,new Note(KeyCode.T,NoteState.Gb,"Gblow",4));
-		notes.put(KeyCode.G,new Note(KeyCode.G,NoteState.G,"Glow",4));
-		notes.put(KeyCode.Y,new Note(KeyCode.Y,NoteState.Ab,"Ablow",4));
-		notes.put(KeyCode.H,new Note(KeyCode.H,NoteState.A,"Alow",4));
-		notes.put(KeyCode.U,new Note(KeyCode.U,NoteState.Bb,"Bblow",4));
-		notes.put(KeyCode.J,new Note(KeyCode.J,NoteState.B,"Blow",4));
-		notes.put(KeyCode.K,new Note(KeyCode.K,NoteState.C,"Cmedium",5));
-		notes.put(KeyCode.O,new Note(KeyCode.O,NoteState.Db,"Dbmedium",5));
-		notes.put(KeyCode.L,new Note(KeyCode.L,NoteState.D,"Dmedium",5));
-		notes.put(KeyCode.P,new Note(KeyCode.P,NoteState.Eb,"Ebmedium",5));
-		notes.put(KeyCode.SEMICOLON,new Note(KeyCode.SEMICOLON,NoteState.E,"Emedium",5));
-		notes.put(KeyCode.QUOTE,new Note(KeyCode.QUOTE,NoteState.F,"Fmedium",5));
-		notes.put(KeyCode.CLOSE_BRACKET,new Note(KeyCode.CLOSE_BRACKET,NoteState.Gb,"Gbmedium",5));
-		notes.put(KeyCode.ENTER,new Note(KeyCode.ENTER,NoteState.G,"Gmedium",5));
-		notes.put(KeyCode.BACK_SLASH,new Note(KeyCode.BACK_SLASH,NoteState.Ab,"Abmedium",5));
-		notes.put(KeyCode.NUMPAD4,new Note(KeyCode.NUMPAD4,NoteState.A,"Amedium",5));
-		notes.put(KeyCode.NUMPAD7,new Note(KeyCode.NUMPAD7,NoteState.Bb,"Bbmedium",5));
-		notes.put(KeyCode.NUMPAD5,new Note(KeyCode.NUMPAD5,NoteState.B,"Bmedium",5));
-		notes.put(KeyCode.NUMPAD6,new Note(KeyCode.NUMPAD6,NoteState.C,"Chigh",6));
+		notes.put(KeyCode.A,new Note(KeyCode.A,NoteState.C,"clow",4));
+		notes.put(KeyCode.W,new Note(KeyCode.W,NoteState.Db,"dblow",4));
+		notes.put(KeyCode.S,new Note(KeyCode.S,NoteState.D,"dlow",4));
+		notes.put(KeyCode.E,new Note(KeyCode.E,NoteState.Eb,"eblow",4));
+		notes.put(KeyCode.D,new Note(KeyCode.D,NoteState.E,"elow",4));
+		notes.put(KeyCode.F,new Note(KeyCode.F,NoteState.F,"flow",4));
+		notes.put(KeyCode.T,new Note(KeyCode.T,NoteState.Gb,"gblow",4));
+		notes.put(KeyCode.G,new Note(KeyCode.G,NoteState.G,"glow",4));
+		notes.put(KeyCode.Y,new Note(KeyCode.Y,NoteState.Ab,"ablow",4));
+		notes.put(KeyCode.H,new Note(KeyCode.H,NoteState.A,"alow",4));
+		notes.put(KeyCode.U,new Note(KeyCode.U,NoteState.Bb,"bblow",4));
+		notes.put(KeyCode.J,new Note(KeyCode.J,NoteState.B,"blow",4));
+		notes.put(KeyCode.K,new Note(KeyCode.K,NoteState.C,"cmedium",5));
+		notes.put(KeyCode.O,new Note(KeyCode.O,NoteState.Db,"dbmedium",5));
+		notes.put(KeyCode.L,new Note(KeyCode.L,NoteState.D,"dmedium",5));
+		notes.put(KeyCode.P,new Note(KeyCode.P,NoteState.Eb,"ebmedium",5));
+		notes.put(KeyCode.SEMICOLON,new Note(KeyCode.SEMICOLON,NoteState.E,"emedium",5));
+		notes.put(KeyCode.QUOTE,new Note(KeyCode.QUOTE,NoteState.F,"fmedium",5));
+		notes.put(KeyCode.CLOSE_BRACKET,new Note(KeyCode.CLOSE_BRACKET,NoteState.Gb,"gbmedium",5));
+		notes.put(KeyCode.ENTER,new Note(KeyCode.ENTER,NoteState.G,"gmedium",5));
+		notes.put(KeyCode.BACK_SLASH,new Note(KeyCode.BACK_SLASH,NoteState.Ab,"abmedium",5));
+		notes.put(KeyCode.NUMPAD4,new Note(KeyCode.NUMPAD4,NoteState.A,"amedium",5));
+		notes.put(KeyCode.NUMPAD7,new Note(KeyCode.NUMPAD7,NoteState.Bb,"bbmedium",5));
+		notes.put(KeyCode.NUMPAD5,new Note(KeyCode.NUMPAD5,NoteState.B,"bmedium",5));
+		notes.put(KeyCode.NUMPAD6,new Note(KeyCode.NUMPAD6,NoteState.C,"chigh",6));
 		
 	}
 	
