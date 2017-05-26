@@ -9,31 +9,31 @@
 
 <AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#backgroundPressed" onKeyReleased="#backgroundReleased" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PianoController">
    <children>
-      <Rectangle fx:id="Clow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="60.0" layoutY="83.0" onMousePressed="#ClowPressed" onMouseReleased="#ClowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Dlow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="92.0" layoutY="83.0" onMousePressed="#DlowPressed" onMouseReleased="#DlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Elow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="124.0" layoutY="83.0" onMousePressed="#ElowPressed" onMouseReleased="#ElowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Flow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="156.0" layoutY="83.0" onMousePressed="#FlowPressd" onMouseReleased="#FlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Glow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="188.0" layoutY="83.0" onMousePressed="#GlowPressed" onMouseReleased="#GlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Alow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="220.0" layoutY="83.0" onMousePressed="#AlowPressed" onMouseReleased="#AlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Blow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="252.0" layoutY="83.0" onMousePressed="#BlowPressed" onMouseReleased="#BlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Cmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="284.0" layoutY="83.0" onMousePressed="#CmediumPressed" onMouseReleased="#CmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Dmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="316.0" layoutY="83.0" onMousePressed="#DmediumPressed" onMouseReleased="#DmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Emedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="348.0" layoutY="83.0" onMousePressed="#EmediumPressed" onMouseReleased="#EmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Fmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="380.0" layoutY="83.0" onMousePressed="#FmediumPressed" onMouseReleased="#FmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Gmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="412.0" layoutY="83.0" onMousePressed="#GmediumPressed" onMouseReleased="#GmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Chigh" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="508.0" layoutY="83.0" onMousePressed="#ChighPressed" onMouseReleased="#ChighReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Bmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="476.0" layoutY="83.0" onMousePressed="#BmediumPressed" onMouseReleased="#BmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Amedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="444.0" layoutY="83.0" onMousePressed="#AmediumPressed" onMouseReleased="#AmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
-      <Rectangle fx:id="Dblow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="82.0" layoutY="83.0" onMousePressed="#DblowPressed" onMouseReleased="#DblowReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Eblow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="114.0" layoutY="83.0" onMousePressed="#EblowPressed" onMouseReleased="#EblowRelease" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Gblow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="178.0" layoutY="83.0" onMousePressed="#GblowPressed" onMouseReleased="#GblowReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Ablow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="210.0" layoutY="83.0" onMousePressed="#AblowPressed" onMouseReleased="#AblowReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Bblow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="242.0" layoutY="83.0" onMousePressed="#BblowPressed" onMouseReleased="#BblowReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Dbmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="306.0" layoutY="83.0" onMousePressed="#DbmediumPressed" onMouseReleased="#DbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Ebmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="338.0" layoutY="83.0" onMousePressed="#EbmediumPressed" onMouseReleased="#EbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Gbmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="402.0" layoutY="83.0" onMousePressed="#GbmediumPressed" onMouseReleased="#GbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Abmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="434.0" layoutY="83.0" onMousePressed="#AbmediumPressed" onMouseReleased="#AbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
-      <Rectangle fx:id="Bbmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="466.0" layoutY="83.0" onMousePressed="#BbmediumPressed" onMouseReleased="#BbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="clow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="60.0" layoutY="83.0" onMousePressed="#ClowPressed" onMouseReleased="#ClowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="dlow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="92.0" layoutY="83.0" onMousePressed="#DlowPressed" onMouseReleased="#DlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="elow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="124.0" layoutY="83.0" onMousePressed="#ElowPressed" onMouseReleased="#ElowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="flow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="156.0" layoutY="83.0" onMousePressed="#FlowPressd" onMouseReleased="#FlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="glow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="188.0" layoutY="83.0" onMousePressed="#GlowPressed" onMouseReleased="#GlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="alow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="220.0" layoutY="83.0" onMousePressed="#AlowPressed" onMouseReleased="#AlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="blow" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="252.0" layoutY="83.0" onMousePressed="#BlowPressed" onMouseReleased="#BlowReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="cmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="284.0" layoutY="83.0" onMousePressed="#CmediumPressed" onMouseReleased="#CmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="dmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="316.0" layoutY="83.0" onMousePressed="#DmediumPressed" onMouseReleased="#DmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="emedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="348.0" layoutY="83.0" onMousePressed="#EmediumPressed" onMouseReleased="#EmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="fmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="380.0" layoutY="83.0" onMousePressed="#FmediumPressed" onMouseReleased="#FmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="gmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="412.0" layoutY="83.0" onMousePressed="#GmediumPressed" onMouseReleased="#GmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="chigh" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="508.0" layoutY="83.0" onMousePressed="#ChighPressed" onMouseReleased="#ChighReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="bmedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="476.0" layoutY="83.0" onMousePressed="#BmediumPressed" onMouseReleased="#BmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="amedium" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" layoutX="444.0" layoutY="83.0" onMousePressed="#AmediumPressed" onMouseReleased="#AmediumReleased" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="dblow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="82.0" layoutY="83.0" onMousePressed="#DblowPressed" onMouseReleased="#DblowReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="eblow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="114.0" layoutY="83.0" onMousePressed="#EblowPressed" onMouseReleased="#EblowRelease" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="gblow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="178.0" layoutY="83.0" onMousePressed="#GblowPressed" onMouseReleased="#GblowReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="ablow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="210.0" layoutY="83.0" onMousePressed="#AblowPressed" onMouseReleased="#AblowReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="bblow" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="242.0" layoutY="83.0" onMousePressed="#BblowPressed" onMouseReleased="#BblowReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="dbmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="306.0" layoutY="83.0" onMousePressed="#DbmediumPressed" onMouseReleased="#DbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="ebmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="338.0" layoutY="83.0" onMousePressed="#EbmediumPressed" onMouseReleased="#EbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="gbmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="402.0" layoutY="83.0" onMousePressed="#GbmediumPressed" onMouseReleased="#GbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="abmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="434.0" layoutY="83.0" onMousePressed="#AbmediumPressed" onMouseReleased="#AbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="bbmedium" arcHeight="5.0" arcWidth="5.0" height="158.0" layoutX="466.0" layoutY="83.0" onMousePressed="#BbmediumPressed" onMouseReleased="#BbmediumReleased" stroke="BLACK" strokeType="INSIDE" width="20.0" />
       <TextField fx:id="BmediumText" alignment="CENTER" editable="false" layoutX="482.0" layoutY="278.0" onKeyPressed="#TextBmediumPressed" prefHeight="31.0" prefWidth="20.0" text="5">
          <font>
             <Font size="10.0" />
@@ -171,5 +171,12 @@
             <Font name="Eras Bold ITC" size="15.0" />
          </font>
       </Label>
+      <Rectangle fx:id="vp2" arcHeight="5.0" arcWidth="5.0" fill="#b4c6d6cc" height="52.0" layoutX="196.0" layoutY="20.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="209.0" />
+      <Label fx:id="vptext" alignment="CENTER" layoutX="196.0" layoutY="14.0" prefHeight="65.0" prefWidth="209.0" text="VISUAL PIANO" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="vp" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff04" height="43.0" layoutX="203.0" layoutY="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="195.0" />
    </children>
 </AnchorPane>
