@@ -1,17 +1,21 @@
 # visual-piano
 our project is a piano on computer. 
 
-#Purpose of this project 
+# How to use
+All you need is just to download a piano.jar file and run it.
+
+# Purpose of this project 
 1) To study JavaMIDI.
 2) To study JavaFX.
-3) To relax when you bored from write the code.
+3) To relax when you bored from writing the code.
 
-#what this program can do?
-It can increase and decresae octave. You can change key if you don't like default Key.
+#  what this program can do?
+It's a visual piano,  you can increase and decresae octave for higer or lower note. 
+You can change key if you don't like default key.
 
-#Tool
+#   What knowledge you need to write this programe.
 1) JavaFx
-2) JavaMidi
+2) JavaMidi packgage.
 3) SceneBiuilder
 
 By Non Puthikanon and Varit Assavavisidchai
